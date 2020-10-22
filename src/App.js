@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Header from './components/Header';
+import SubHeader from './components/SubHeader';
+import Banner from './components/Banner';
+
+import './scss/style.scss';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
+  const banners = [
+    { id: 1, img: '1.jpg' },
+    { id: 2, img: '2.jpg' },
+    { id: 3, img: '3.jpg' },
+    { id: 4, img: '4.jpg' },
+    { id: 5, img: '5.jpg' },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SubHeader />
+      <div className="main-content_wrapper">
+        <Banner banners={banners} />
+        <div className="bottom-gradient"></div>
+      </div>
     </div>
   );
 }

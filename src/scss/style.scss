@@ -1,0 +1,39 @@
+@import './variables';
+@import './components/Header/header.scss';
+@import './components/SubHeader/subheader.scss';
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Amazon Ember';
+  color: $white-color;
+}
+
+.main-content_wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+
+  .bottom-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), transparent);
+  }
+}
+
+.button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

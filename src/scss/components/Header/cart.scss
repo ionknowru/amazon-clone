@@ -1,0 +1,41 @@
+@import '../../variables';
+
+.cart_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .button {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  h6 {
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 5px;
+    color: $white-color;
+
+    span {
+      padding-left: 8px;
+      color: $primary-color;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        stroke: $white-hover;
+      }
+    }
+
+    h6 {
+      color: $white-hover;
+    }
+  }
+}
