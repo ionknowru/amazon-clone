@@ -22,7 +22,7 @@ function Search() {
         </button>
         <input onChange={handleSearch} value={searchValue} type="text" />
         <button className="button button_search" onClick={findIn}>
-          <img className="search_icon" src={searchSvg} alt="search button" />
+          <img className="search-icon" src={searchSvg} alt="search button" />
         </button>
       </form>
     </>

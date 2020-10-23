@@ -1,6 +1,7 @@
 @import './variables';
 @import './components/Header/header.scss';
-@import './components/SubHeader/subheader.scss';
+@import './components/NavBar/navBar.scss';
+@import './components/ProductCard/productCard.scss';
 
 *,
 ::before,
@@ -15,7 +16,7 @@ body {
   color: $white-color;
 }
 
-.main-content_wrapper {
+.main-content-wrapper {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -24,10 +25,20 @@ body {
   .bottom-gradient {
     position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
-    height: 100%;
+    width: 1500px;
+    height: 604px;
     background: linear-gradient(to top, rgba(255, 255, 255, 1), transparent);
+  }
+
+  .products-list {
+    position: absolute;
+    top: 260px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    width: 100%;
   }
 }
 

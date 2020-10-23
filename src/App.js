@@ -1,29 +1,21 @@
 import React from 'react';
-
-import Header from './components/Header';
-import SubHeader from './components/SubHeader';
-import Banner from './components/Banner';
+import { Header, NavBar, Banner, ProductsList } from './components';
 
 import './scss/style.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-function App() {
-  const banners = [
-    { id: 1, img: '1.jpg' },
-    { id: 2, img: '2.jpg' },
-    { id: 3, img: '3.jpg' },
-    { id: 4, img: '4.jpg' },
-    { id: 5, img: '5.jpg' },
-  ];
+// TODO: Refactor styles names for БЭМ
 
+function App() {
   return (
     <div className="App">
       <Header />
-      <SubHeader />
-      <div className="main-content_wrapper">
-        <Banner banners={banners} />
+      <NavBar />
+      <div className="main-content-wrapper">
+        <Banner />
         <div className="bottom-gradient"></div>
+        <ProductsList />
       </div>
     </div>
   );

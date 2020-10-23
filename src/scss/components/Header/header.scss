@@ -16,7 +16,7 @@
     width: 100%;
     padding: 10px 22px 10px 10px;
 
-    &__left {
+    &-left {
       display: flex;
       align-items: center;
 
@@ -28,7 +28,7 @@
       }
     }
 
-    &__right {
+    &-right {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;

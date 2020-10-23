@@ -5,18 +5,17 @@ import Search from './Search';
 
 import logoPng from '../../assets/images/logo.png';
 
-function index() {
+function Index() {
   return (
     <header className="header">
       <div className="header__inner">
-        <div className="header__inner__left">
+        <div className="header__inner-left">
           <img className="logo" src={logoPng} alt="amazon logo" />
         </div>
 
         <Search />
 
-        <div className="header__inner__right">
-
+        <div className="header__inner-right">
           <button className="button button_link">
             ENG
             <i>
@@ -34,7 +33,7 @@ function index() {
             </i>
           </button>
 
-          <div className="login_block">
+          <div className="login-block">
             <button className="button button_link">
               <p>
                 Hello, Sign in
@@ -44,7 +43,7 @@ function index() {
             </button>
           </div>
 
-          <div className="returns_block">
+          <div className="returns-block">
             <button className="button button_link">
               <p>
                 Returns
@@ -61,4 +60,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

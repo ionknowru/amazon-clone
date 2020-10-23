@@ -1,8 +1,8 @@
 import React from 'react';
 
-function index() {
+function Index() {
   return (
-    <div className="subheader">
+    <div className="navBar">
       <nav className="nav">
         <a className="nav__link" href="#">
           Today's Deals
@@ -24,4 +24,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

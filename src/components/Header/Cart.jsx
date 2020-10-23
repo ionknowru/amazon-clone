@@ -2,7 +2,7 @@ import React from 'react';
 
 function Cart() {
   return (
-    <div className="cart_block">
+    <div className="cart-block">
       <button className="button button_link">
         <svg
           width="18"
