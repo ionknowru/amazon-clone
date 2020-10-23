@@ -13,18 +13,52 @@
 
 body {
   font-family: 'Amazon Ember';
+  background: #eaeded;
   color: $white-color;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.category {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 20%;
+  height: 80px;
+  padding: 3px 5px;
+  background: $white-color;
+  box-shadow: 5px 5px 8px 0 black;
+
+  &__item {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 1px;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      background: blue;
+    }
+  }
 }
 
 .main-content-wrapper {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+  padding-top: 100px;
   position: relative;
 
   .bottom-gradient {
     position: absolute;
-    top: 0;
+    top: 100px;
     width: 1500px;
     height: 604px;
     background: linear-gradient(to top, rgba(255, 255, 255, 1), transparent);
@@ -32,13 +66,13 @@ body {
 
   .products-list {
     position: absolute;
-    top: 260px;
+    top: 350px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 10px;
     width: 100%;
+    padding: 0 10px;
   }
 }
 

@@ -1,6 +1,9 @@
-@import '../../variables';
-
 .navBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 800;
     margin-top: 60px;
     padding: 10px 20px;
     background: #232f3e;
