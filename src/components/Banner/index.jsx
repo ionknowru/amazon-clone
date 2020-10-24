@@ -13,8 +13,6 @@ function Index() {
     });
   }, []);
 
-  console.log(banners);
-
   return (
     <div className="banner-block">
       <Slider {...config}>

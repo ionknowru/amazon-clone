@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Cart from './Cart';
 import Search from './Search';
@@ -10,7 +11,9 @@ function Index() {
     <header className="header">
       <div className="header__inner">
         <div className="header__inner-left">
-          <img className="logo" src={logoPng} alt="amazon logo" />
+          <Link to="/">
+            <img className="logo" src={logoPng} alt="amazon logo" />
+          </Link>
         </div>
 
         <Search />

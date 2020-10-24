@@ -2,6 +2,7 @@
 @import './components/Header/header.scss';
 @import './components/NavBar/navBar.scss';
 @import './components/ProductCard/productCard.scss';
+@import './components/Category/categories.scss';
 
 *,
 ::before,
@@ -19,34 +20,6 @@ body {
 
 .wrapper {
   position: relative;
-}
-
-.category {
-  position: absolute;
-  top: 42px;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 20%;
-  height: 80px;
-  padding: 3px 5px;
-  background: $white-color;
-  box-shadow: 5px 5px 8px 0 black;
-
-  &__item {
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 1px;
-    color: black;
-    text-decoration: none;
-
-    &:hover {
-      background: blue;
-    }
-  }
 }
 
 .main-content-wrapper {

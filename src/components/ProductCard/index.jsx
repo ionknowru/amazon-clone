@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Index({ products }) {
   return (
@@ -20,7 +21,9 @@ function Index({ products }) {
                 alt="product card image"
               />
             </div>
-            <button className="button button_link">Show More</button>
+            <Link to={`/products/${product.id}`}>
+              <button className="button button_link">Show More</button>
+            </Link>
           </div>
         );
       })}
